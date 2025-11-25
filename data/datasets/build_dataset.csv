@@ -1,0 +1,5 @@
+filename,error_text,cleaned_text,status
+jenkins_sample-build_1.json,,"Started by user admin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/sample-build
+Finished: SUCCESS",0
