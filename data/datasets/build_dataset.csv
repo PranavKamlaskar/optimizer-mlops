@@ -1,5 +1,382 @@
 filename,error_text,cleaned_text,status
+parsed_gha_run_19507472002_0_build_txt.json,,"﻿ Current runner version: '2.329.0'
+ ##[group]Runner Image Provisioner
+ Hosted Compute Agent
+ Version: 20251016.436
+ Commit: 8ab8ac8bfd662a3739dab9fe09456aba92132568
+ Build Date: 2025-10-15T20:44:12Z
+ ##[endgroup]
+ ##[group]Operating System
+ Ubuntu
+ 24.04.3
+ LTS
+ ##[endgroup]
+ ##[group]Runner Image
+ Image: ubuntu-24.04
+ Version: 20251112.124.1
+ Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251112.124/images/ubuntu/Ubuntu2404-Readme.md
+ Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251112.124
+ ##[endgroup]
+ ##[group]GITHUB_TOKEN Permissions
+ Contents: read
+ Metadata: read
+ Packages: read
+ ##[endgroup]
+ Secret source: Actions
+ Prepare workflow directory
+ Prepare all required actions
+ Getting action download info
+ Download action repository 'actions/checkout@v4' (SHA:08eba0b27e820071cde6df949e0beb9ba4906955)
+ Complete job name: build
+ ##[group]Run actions/checkout@v4
+ with:
+   repository: PranavKamlaskar/optimizer-mlops
+   token: ***
+   ssh-strict: true
+   ssh-user: git
+   persist-credentials: true
+   clean: true
+   sparse-checkout-cone-mode: true
+   fetch-depth: 1
+   fetch-tags: false
+   show-progress: true
+   lfs: false
+   submodules: false
+   set-safe-directory: true
+ ##[endgroup]
+ Syncing repository: PranavKamlaskar/optimizer-mlops
+ ##[group]Getting Git version info
+ Working directory is '/home/runner/work/optimizer-mlops/optimizer-mlops'
+ [command]/usr/bin/git version
+ git version 2.51.2
+ ##[endgroup]
+ Temporarily overriding HOME='/home/runner/work/_temp/9ba07def-22de-45b1-ac53-938fb4dc01f2' before making global git config changes
+ Adding repository directory to the temporary git global config as a safe directory
+ [command]/usr/bin/git config --global --add safe.directory /home/runner/work/optimizer-mlops/optimizer-mlops
+ Deleting the contents of '/home/runner/work/optimizer-mlops/optimizer-mlops'
+ ##[group]Initializing the repository
+ [command]/usr/bin/git init /home/runner/work/optimizer-mlops/optimizer-mlops
+ hint: Using 'master' as the name for the initial branch. This default branch name
+ hint: is subject to change. To configure the initial branch name to use in all
+ hint: of your new repositories, which will suppress this warning, call:
+ hint:
+ hint: 	git config --global init.defaultBranch <name>
+ hint:
+ hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+ hint: 'development'. The just-created branch can be renamed via this command:
+ hint:
+ hint: 	git branch -m <name>
+ hint:
+ hint: Disable this message with ""git config set advice.defaultBranchName false""
+ Initialized empty Git repository in /home/runner/work/optimizer-mlops/optimizer-mlops/.git/
+ [command]/usr/bin/git remote add origin https://github.com/PranavKamlaskar/optimizer-mlops
+ ##[endgroup]
+ ##[group]Disabling automatic garbage collection
+ [command]/usr/bin/git config --local gc.auto 0
+ ##[endgroup]
+ ##[group]Setting up auth
+ [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+ [command]/usr/bin/git submodule foreach --recursive sh -c ""git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :""
+ [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+ [command]/usr/bin/git submodule foreach --recursive sh -c ""git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :""
+ [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+ ##[endgroup]
+ ##[group]Fetching the repository
+ [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +310fb91798311082455195aa4261c5b3d8c8c4f0:refs/remotes/origin/main
+ From https://github.com/PranavKamlaskar/optimizer-mlops
+  * [new ref]         310fb91798311082455195aa4261c5b3d8c8c4f0 -> origin/main
+ ##[endgroup]
+ ##[group]Determining the checkout info
+ ##[endgroup]
+ [command]/usr/bin/git sparse-checkout disable
+ [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+ ##[group]Checking out the ref
+ [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+ Switched to a new branch 'main'
+ branch 'main' set up to track 'origin/main'.
+ ##[endgroup]
+ [command]/usr/bin/git log -1 --format=%H
+ 310fb91798311082455195aa4261c5b3d8c8c4f0
+ ##[group]Run echo ""devops setup complete""
+ [36;1mecho ""devops setup complete""[0m
+ shell: /usr/bin/bash -e {0}
+ ##[endgroup]
+ devops setup complete
+ Post job cleanup.
+ [command]/usr/bin/git version
+ git version 2.51.2
+ Temporarily overriding HOME='/home/runner/work/_temp/6258e683-a3a6-4e4c-bf7d-daf8b9e222ce' before making global git config changes
+ Adding repository directory to the temporary git global config as a safe directory
+ [command]/usr/bin/git config --global --add safe.directory /home/runner/work/optimizer-mlops/optimizer-mlops
+ [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+ [command]/usr/bin/git submodule foreach --recursive sh -c ""git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :""
+ [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+ http.https://github.com/.extraheader
+ [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+ [command]/usr/bin/git submodule foreach --recursive sh -c ""git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :""
+ Cleaning up orphan processes",0
+system.json,,,0
+parsed_gha_run_19662307747_build_system_txt.json,,"Requested labels: ubuntu-latest
+ Job defined at: PranavKamlaskar/optimizer-mlops/.github/workflows/test.yml@refs/heads/main
+ Waiting for a runner to pick up this job...
+ Job is about to start running on the hosted runner: GitHub Actions 1000000002
+ Job is waiting for a hosted runner to come online.",0
+parsed_jenkins_sample-build_1_log.json,,"Started by user admin
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/sample-build
+Finished: SUCCESS",0
+parsed_gha_run_19507472002_build_system_txt.json,,"Requested labels: ubuntu-latest
+ Job defined at: PranavKamlaskar/optimizer-mlops/.github/workflows/test.yml@refs/heads/main
+ Waiting for a runner to pick up this job...
+ Job is about to start running on the hosted runner: GitHub Actions 1000000000
+ Job is waiting for a hosted runner to come online.",0
+0_build.json,,﻿,0
 jenkins_sample-build_1.json,,"Started by user admin
 Running as SYSTEM
 Building in workspace /var/jenkins_home/workspace/sample-build
 Finished: SUCCESS",0
+parsed_gha_run_19662307747_0_build_txt.json,,"﻿ Current runner version: '2.329.0'
+ ##[group]Runner Image Provisioner
+ Hosted Compute Agent
+ Version: 20251016.436
+ Commit: 8ab8ac8bfd662a3739dab9fe09456aba92132568
+ Build Date: 2025-10-15T20:44:12Z
+ ##[endgroup]
+ ##[group]Operating System
+ Ubuntu
+ 24.04.3
+ LTS
+ ##[endgroup]
+ ##[group]Runner Image
+ Image: ubuntu-24.04
+ Version: 20251112.124.1
+ Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251112.124/images/ubuntu/Ubuntu2404-Readme.md
+ Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251112.124
+ ##[endgroup]
+ ##[group]GITHUB_TOKEN Permissions
+ Contents: read
+ Metadata: read
+ Packages: read
+ ##[endgroup]
+ Secret source: Actions
+ Prepare workflow directory
+ Prepare all required actions
+ Getting action download info
+ Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+ Complete job name: build
+ ##[group]Run actions/checkout@v4
+ with:
+   repository: PranavKamlaskar/optimizer-mlops
+   token: ***
+   ssh-strict: true
+   ssh-user: git
+   persist-credentials: true
+   clean: true
+   sparse-checkout-cone-mode: true
+   fetch-depth: 1
+   fetch-tags: false
+   show-progress: true
+   lfs: false
+   submodules: false
+   set-safe-directory: true
+ ##[endgroup]
+ Syncing repository: PranavKamlaskar/optimizer-mlops
+ ##[group]Getting Git version info
+ Working directory is '/home/runner/work/optimizer-mlops/optimizer-mlops'
+ [command]/usr/bin/git version
+ git version 2.51.2
+ ##[endgroup]
+ Temporarily overriding HOME='/home/runner/work/_temp/a8aeb86d-45ac-49b0-a511-9a721b50b13b' before making global git config changes
+ Adding repository directory to the temporary git global config as a safe directory
+ [command]/usr/bin/git config --global --add safe.directory /home/runner/work/optimizer-mlops/optimizer-mlops
+ Deleting the contents of '/home/runner/work/optimizer-mlops/optimizer-mlops'
+ ##[group]Initializing the repository
+ [command]/usr/bin/git init /home/runner/work/optimizer-mlops/optimizer-mlops
+ hint: Using 'master' as the name for the initial branch. This default branch name
+ hint: is subject to change. To configure the initial branch name to use in all
+ hint: of your new repositories, which will suppress this warning, call:
+ hint:
+ hint: 	git config --global init.defaultBranch <name>
+ hint:
+ hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+ hint: 'development'. The just-created branch can be renamed via this command:
+ hint:
+ hint: 	git branch -m <name>
+ hint:
+ hint: Disable this message with ""git config set advice.defaultBranchName false""
+ Initialized empty Git repository in /home/runner/work/optimizer-mlops/optimizer-mlops/.git/
+ [command]/usr/bin/git remote add origin https://github.com/PranavKamlaskar/optimizer-mlops
+ ##[endgroup]
+ ##[group]Disabling automatic garbage collection
+ [command]/usr/bin/git config --local gc.auto 0
+ ##[endgroup]
+ ##[group]Setting up auth
+ [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+ [command]/usr/bin/git submodule foreach --recursive sh -c ""git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :""
+ [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+ [command]/usr/bin/git submodule foreach --recursive sh -c ""git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :""
+ [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+ [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+ [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+ ##[endgroup]
+ ##[group]Fetching the repository
+ [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +f05d4585f335c7b77ae42530880a51ae3455e35a:refs/remotes/origin/main
+ From https://github.com/PranavKamlaskar/optimizer-mlops
+  * [new ref]         f05d4585f335c7b77ae42530880a51ae3455e35a -> origin/main
+ ##[endgroup]
+ ##[group]Determining the checkout info
+ ##[endgroup]
+ [command]/usr/bin/git sparse-checkout disable
+ [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+ ##[group]Checking out the ref
+ [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+ Switched to a new branch 'main'
+ branch 'main' set up to track 'origin/main'.
+ ##[endgroup]
+ [command]/usr/bin/git log -1 --format=%H
+ f05d4585f335c7b77ae42530880a51ae3455e35a
+ ##[group]Run echo ""devops setup complete""
+ [36;1mecho ""devops setup complete""[0m
+ shell: /usr/bin/bash -e {0}
+ ##[endgroup]
+ devops setup complete
+ Post job cleanup.
+ [command]/usr/bin/git version
+ git version 2.51.2
+ Temporarily overriding HOME='/home/runner/work/_temp/401d51ee-5a40-45d6-8ef3-532f08117a30' before making global git config changes
+ Adding repository directory to the temporary git global config as a safe directory
+ [command]/usr/bin/git config --global --add safe.directory /home/runner/work/optimizer-mlops/optimizer-mlops
+ [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+ [command]/usr/bin/git submodule foreach --recursive sh -c ""git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :""
+ [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+ http.https://github.com/.extraheader
+ [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+ [command]/usr/bin/git submodule foreach --recursive sh -c ""git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :""
+ [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+ [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+ Cleaning up orphan processes",0
+parsed_gha_run_19661139527_build_system_txt.json,,"Requested labels: ubuntu-latest
+ Job defined at: PranavKamlaskar/optimizer-mlops/.github/workflows/test.yml@refs/heads/main
+ Waiting for a runner to pick up this job...
+ Job is about to start running on the hosted runner: GitHub Actions 1000000001
+ Job is waiting for a hosted runner to come online.",0
+parsed_gha_run_19661139527_0_build_txt.json,,"﻿ Current runner version: '2.329.0'
+ ##[group]Runner Image Provisioner
+ Hosted Compute Agent
+ Version: 20251016.436
+ Commit: 8ab8ac8bfd662a3739dab9fe09456aba92132568
+ Build Date: 2025-10-15T20:44:12Z
+ ##[endgroup]
+ ##[group]Operating System
+ Ubuntu
+ 24.04.3
+ LTS
+ ##[endgroup]
+ ##[group]Runner Image
+ Image: ubuntu-24.04
+ Version: 20251112.124.1
+ Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20251112.124/images/ubuntu/Ubuntu2404-Readme.md
+ Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20251112.124
+ ##[endgroup]
+ ##[group]GITHUB_TOKEN Permissions
+ Contents: read
+ Metadata: read
+ Packages: read
+ ##[endgroup]
+ Secret source: Actions
+ Prepare workflow directory
+ Prepare all required actions
+ Getting action download info
+ Download action repository 'actions/checkout@v4' (SHA:34e114876b0b11c390a56381ad16ebd13914f8d5)
+ Complete job name: build
+ ##[group]Run actions/checkout@v4
+ with:
+   repository: PranavKamlaskar/optimizer-mlops
+   token: ***
+   ssh-strict: true
+   ssh-user: git
+   persist-credentials: true
+   clean: true
+   sparse-checkout-cone-mode: true
+   fetch-depth: 1
+   fetch-tags: false
+   show-progress: true
+   lfs: false
+   submodules: false
+   set-safe-directory: true
+ ##[endgroup]
+ Syncing repository: PranavKamlaskar/optimizer-mlops
+ ##[group]Getting Git version info
+ Working directory is '/home/runner/work/optimizer-mlops/optimizer-mlops'
+ [command]/usr/bin/git version
+ git version 2.51.2
+ ##[endgroup]
+ Temporarily overriding HOME='/home/runner/work/_temp/30c9b647-f94d-48f8-b8b0-a3967dae940e' before making global git config changes
+ Adding repository directory to the temporary git global config as a safe directory
+ [command]/usr/bin/git config --global --add safe.directory /home/runner/work/optimizer-mlops/optimizer-mlops
+ Deleting the contents of '/home/runner/work/optimizer-mlops/optimizer-mlops'
+ ##[group]Initializing the repository
+ [command]/usr/bin/git init /home/runner/work/optimizer-mlops/optimizer-mlops
+ hint: Using 'master' as the name for the initial branch. This default branch name
+ hint: is subject to change. To configure the initial branch name to use in all
+ hint: of your new repositories, which will suppress this warning, call:
+ hint:
+ hint: 	git config --global init.defaultBranch <name>
+ hint:
+ hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+ hint: 'development'. The just-created branch can be renamed via this command:
+ hint:
+ hint: 	git branch -m <name>
+ hint:
+ hint: Disable this message with ""git config set advice.defaultBranchName false""
+ Initialized empty Git repository in /home/runner/work/optimizer-mlops/optimizer-mlops/.git/
+ [command]/usr/bin/git remote add origin https://github.com/PranavKamlaskar/optimizer-mlops
+ ##[endgroup]
+ ##[group]Disabling automatic garbage collection
+ [command]/usr/bin/git config --local gc.auto 0
+ ##[endgroup]
+ ##[group]Setting up auth
+ [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+ [command]/usr/bin/git submodule foreach --recursive sh -c ""git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :""
+ [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+ [command]/usr/bin/git submodule foreach --recursive sh -c ""git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :""
+ [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+ [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+ [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+ ##[endgroup]
+ ##[group]Fetching the repository
+ [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +323037f8eded418658bc8c8f51e6c3a487126883:refs/remotes/origin/main
+ From https://github.com/PranavKamlaskar/optimizer-mlops
+  * [new ref]         323037f8eded418658bc8c8f51e6c3a487126883 -> origin/main
+ ##[endgroup]
+ ##[group]Determining the checkout info
+ ##[endgroup]
+ [command]/usr/bin/git sparse-checkout disable
+ [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+ ##[group]Checking out the ref
+ [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+ Switched to a new branch 'main'
+ branch 'main' set up to track 'origin/main'.
+ ##[endgroup]
+ [command]/usr/bin/git log -1 --format=%H
+ 323037f8eded418658bc8c8f51e6c3a487126883
+ ##[group]Run echo ""devops setup complete""
+ [36;1mecho ""devops setup complete""[0m
+ shell: /usr/bin/bash -e {0}
+ ##[endgroup]
+ devops setup complete
+ Post job cleanup.
+ [command]/usr/bin/git version
+ git version 2.51.2
+ Temporarily overriding HOME='/home/runner/work/_temp/ba6a4c2c-11be-40d7-8098-4b043d3ad18c' before making global git config changes
+ Adding repository directory to the temporary git global config as a safe directory
+ [command]/usr/bin/git config --global --add safe.directory /home/runner/work/optimizer-mlops/optimizer-mlops
+ [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+ [command]/usr/bin/git submodule foreach --recursive sh -c ""git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :""
+ [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+ http.https://github.com/.extraheader
+ [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+ [command]/usr/bin/git submodule foreach --recursive sh -c ""git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :""
+ [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+ [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+ Cleaning up orphan processes",0

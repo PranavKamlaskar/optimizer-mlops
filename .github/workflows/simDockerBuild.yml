@@ -1,0 +1,25 @@
+name: Docker Build
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Build Docker image
+      run: |
+        docker build -t myapp:latest .
+        # This will fail if Dockerfile has syntax errors
+        
+    - name: Run container tests
+      run: |
+        docker run --rm myapp:latest pytest
+        # Container tests might fail
+        
+    - name: Push to Registry
+      run: |
+        echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+        docker push myapp:latest

@@ -1,0 +1,10 @@
+{
+  "source": "jenkins",
+  "filename": "jenkins_sample-build_1.log",
+  "directory": "data/raw",
+  "raw_log_path": "data/raw/jenkins_sample-build_1.log",
+  "timestamp": "2025-11-28 09:32:40.274299",
+  "cleaned_log": "Started by user admin\nRunning as SYSTEM\nBuilding in workspace /var/jenkins_home/workspace/sample-build\nFinished: SUCCESS",
+  "error_lines": [],
+  "error_count": 0
+}

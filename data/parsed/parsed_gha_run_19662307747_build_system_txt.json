@@ -1,0 +1,10 @@
+{
+  "source": "github_actions",
+  "filename": "system.txt",
+  "directory": "data/raw/gha_run_19662307747/build",
+  "raw_log_path": "data/raw/gha_run_19662307747/build/system.txt",
+  "timestamp": "2025-11-28 09:32:40.295058",
+  "cleaned_log": "Requested labels: ubuntu-latest\n Job defined at: PranavKamlaskar/optimizer-mlops/.github/workflows/test.yml@refs/heads/main\n Waiting for a runner to pick up this job...\n Job is about to start running on the hosted runner: GitHub Actions 1000000002\n Job is waiting for a hosted runner to come online.",
+  "error_lines": [],
+  "error_count": 0
+}
